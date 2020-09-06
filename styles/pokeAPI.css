@@ -1,0 +1,839 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+}
+
+ul {
+  columns: 2;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  /* Removes the dot from li */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-align: left;
+}
+
+li a {
+  text-decoration: none;
+  color: #111111;
+}
+
+.pokedex {
+  width: 750px;
+  height: 500px;
+}
+
+.leftSide {
+  position: relative;
+  float: left;
+  background-color: #C00D0D;
+  height: 500px;
+  width: 400px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  -webkit-box-shadow: -10px 8px 1px 3px #600707;
+          box-shadow: -10px 8px 1px 3px #600707;
+}
+
+.rightSide {
+  position: relative;
+  float: right;
+  margin-top: 75px;
+  background-color: #C00D0D;
+  height: 425px;
+  width: 350px;
+  border-bottom-right-radius: 30px;
+  -webkit-box-shadow: -10px 8px 1px 3px #600707;
+          box-shadow: -10px 8px 1px 3px #600707;
+}
+
+.middle {
+  position: absolute;
+  z-index: 150;
+  margin-left: 350px;
+  height: 500px;
+  width: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#8B0000), color-stop(#C00D0D), to(#8B0000));
+  background: linear-gradient(to right, #8B0000, #C00D0D, #8B0000);
+  -webkit-box-shadow: 0px 5px 5px 3px #600707;
+          box-shadow: 0px 5px 5px 3px #600707;
+}
+
+.middleTopHinge {
+  position: absolute;
+  z-index: 20;
+  width: 50px;
+  height: 46px;
+  background: -webkit-gradient(linear, left top, right top, from(#600707), color-stop(#C00D0D), to(#600707));
+  background: linear-gradient(to right, #600707, #C00D0D, #600707);
+  border-bottom: solid #600707 2px;
+  border-top: solid #600707 2px;
+}
+
+.middleMidHinge {
+  position: absolute;
+  z-index: 20;
+  margin-top: 100px;
+  width: 50px;
+  height: 46px;
+  background: -webkit-gradient(linear, left top, right top, from(#600707), color-stop(#C00D0D), to(#600707));
+  background: linear-gradient(to right, #600707, #C00D0D, #600707);
+  border-bottom: solid #600707 2px;
+  border-top: solid #600707 2px;
+}
+
+.middleBottomHinge {
+  position: absolute;
+  z-index: 20;
+  margin-top: 400px;
+  width: 50px;
+  height: 46px;
+  background: -webkit-gradient(linear, left top, right top, from(#600707), color-stop(#C00D0D), to(#600707));
+  background: linear-gradient(to right, #600707, #C00D0D, #600707);
+  border-bottom: solid #600707 2px;
+  border-top: solid #600707 2px;
+}
+
+.innerTopRightCurve {
+  position: absolute;
+  z-index: 100;
+  margin: 50px auto auto 400px;
+  background-color: #C00D0D;
+  width: 200px;
+  height: 200px;
+  border-top-right-radius: 120px;
+}
+
+.outterTopRightCurve {
+  position: absolute;
+  z-index: 100;
+  margin: 0px auto auto 520px;
+  background-color: #FFFFFF;
+  width: 230px;
+  height: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.topLeft {
+  position: absolute;
+  z-index: 20;
+  width: 350px;
+  height: 75px;
+  background-color: #8B0000;
+  border-top-left-radius: 30px;
+}
+
+.topLeftButtonContainer {
+  position: absolute;
+  z-index: 110;
+  margin: 0px auto auto 0px;
+  background-color: #8B0000;
+  width: 230px;
+  height: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 30px;
+  -webkit-box-shadow: -10px 8px 1px 3px #600707;
+          box-shadow: -10px 8px 1px 3px #600707;
+}
+
+#top-left2 {
+  position: absolute;
+  z-index: 100;
+  margin: 50px auto auto 150px;
+  background-color: #C00D0D;
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 120px;
+}
+
+.glassButton {
+  position: absolute;
+  z-index: 110;
+  margin: 17px auto auto 17px;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(#A9E9F7, #1DC6EC);
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 5px;
+  -webkit-box-shadow: 0px 0px 6px 4px #600707;
+          box-shadow: 0px 0px 6px 4px #600707;
+}
+
+.glassButtonReflection {
+  position: absolute;
+  z-index: 120;
+  margin: 3px auto auto 15px;
+  width: 30px;
+  height: 17px;
+  background-color: #A0F2FA;
+  border-radius: 20px 15px;
+}
+
+.topLeftButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85px;
+  margin: 12px auto auto 100px;
+}
+
+.topLeftRedButton {
+  z-index: 120;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(#FB7575, #C00D0D);
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 6px 2px #600707;
+          box-shadow: 0px 0px 6px 2px #600707;
+}
+
+.topLeftYellowButton {
+  z-index: 120;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(#FBFB8A, #FFFF00);
+  background-color: #A0F2FA;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 6px 2px #600707;
+          box-shadow: 0px 0px 6px 2px #600707;
+}
+
+.topLeftGreenButton {
+  z-index: 120;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(#ACFB76, #30DA0C);
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 6px 2px #600707;
+          box-shadow: 0px 0px 6px 2px #600707;
+}
+
+.leftScreenContainer {
+  position: absolute;
+  z-index: 100;
+  margin: 135px auto auto 25px;
+  background-color: #B0B0B0;
+  width: 300px;
+  height: 220px;
+  border-radius: 20px;
+}
+
+.leftScreen {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 110;
+  margin: 155px auto auto 45px;
+  background-color: #FFFFFF;
+  width: 255px;
+  height: 140px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #494949;
+}
+
+.leftScreen img {
+  height: 130px;
+  width: auto;
+  border-radius: 15px;
+}
+
+.selectDisable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.triangleCoverUp {
+  position: absolute;
+  z-index: 120;
+  margin: 315px auto auto 25px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 0 0 40px;
+  border-color: transparent transparent transparent #C00D0D;
+}
+
+.leftScreenTopButtonOne {
+  position: absolute;
+  z-index: 110;
+  margin: 4px auto auto 130px;
+  background: radial-gradient(#FB7575, #C00D0D);
+  border-radius: 100px;
+  border-style: solid;
+  border-color: #222222;
+  border-width: 1px;
+  height: 10px;
+  width: 10px;
+}
+
+.leftScreenTopButtonTwo {
+  position: absolute;
+  z-index: 110;
+  margin: 4px auto auto 160px;
+  background: radial-gradient(#FB7575, #C00D0D);
+  border-radius: 100px;
+  border-style: solid;
+  border-color: #222222;
+  border-width: 1px;
+  height: 10px;
+  width: 10px;
+}
+
+.leftScreenBottomButton {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C00D0D), to(#8B0000));
+  background: linear-gradient(#C00D0D, #8B0000);
+  position: absolute;
+  z-index: 130;
+  margin: 178px auto auto 50px;
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
+  -webkit-box-shadow: 0px 1px 0px 1px #600707;
+          box-shadow: 0px 1px 0px 1px #600707;
+  cursor: pointer;
+}
+
+.leftScreenBottomButton:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#010000), to(#C00D0D));
+  background: linear-gradient(#010000, #C00D0D);
+  -webkit-box-shadow: 0px 0px 10px 3px #900a0a inset;
+          box-shadow: 0px 0px 10px 3px #900a0a inset;
+  border: #222222 solid 1px;
+}
+
+.leftScreenContainer p {
+  margin: 157px auto auto 180px;
+  font-size: 4em;
+  color: #494949;
+}
+
+.leftBlueButton {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2D77F9), to(#0530E5));
+  background: linear-gradient(#2D77F9, #0530E5);
+  position: absolute;
+  z-index: 130;
+  margin: 385px auto auto 20px;
+  border-radius: 100px;
+  height: 55px;
+  width: 55px;
+  -webkit-box-shadow: 0px 1px 0px 1px #031b81;
+          box-shadow: 0px 1px 0px 1px #031b81;
+  cursor: pointer;
+}
+
+.leftBlueButton:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#032158), to(#2D77F9));
+  background: linear-gradient(#032158, #2D77F9);
+  -webkit-box-shadow: 0px 0px 10px 3px #0426b3 inset;
+          box-shadow: 0px 0px 10px 3px #0426b3 inset;
+  border: #222222 solid 1px;
+}
+
+.leftGreenButton {
+  background: -webkit-gradient(linear, left top, left bottom, from(#30DA0C), to(#137604));
+  background: linear-gradient(#30DA0C, #137604);
+  position: absolute;
+  z-index: 130;
+  margin: 400px auto auto 100px;
+  border-radius: 100px;
+  height: 12px;
+  width: 50px;
+  -webkit-box-shadow: -1px 1px 0px 1px #072c01;
+          box-shadow: -1px 1px 0px 1px #072c01;
+  cursor: pointer;
+}
+
+.leftGreenButton:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#051901), to(#30DA0C));
+  background: linear-gradient(#051901, #30DA0C);
+  -webkit-box-shadow: 0px 0px 10px 3px #1b7907 inset;
+          box-shadow: 0px 0px 10px 3px #1b7907 inset;
+  border: #104904 solid 1px;
+}
+
+.leftOrangeButton {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF9B5B), to(#F66C1F));
+  background: linear-gradient(#FF9B5B, #F66C1F);
+  position: absolute;
+  z-index: 130;
+  margin: 400px auto auto 165px;
+  border-radius: 100px;
+  height: 12px;
+  width: 50px;
+  -webkit-box-shadow: -1px 1px 0px 1px #5f2404;
+          box-shadow: -1px 1px 0px 1px #5f2404;
+  cursor: pointer;
+}
+
+.leftOrangeButton:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f45f00), to(#FF9B5B));
+  background: linear-gradient(#f45f00, #FF9B5B);
+  -webkit-box-shadow: 0px 0px 5px 3px #c14b00 inset;
+          box-shadow: 0px 0px 5px 3px #c14b00 inset;
+  border: #8e3700 solid 1px;
+}
+
+.pokeIdContainer {
+  position: absolute;
+  z-index: 130;
+  margin: 430px auto auto 100px;
+  border-radius: 10px;
+  height: 55px;
+  width: 115px;
+  -webkit-box-shadow: 0 0 20px #004846 inset, 0px 0px 5px 1px #600707;
+          box-shadow: 0 0 20px #004846 inset, 0px 0px 5px 1px #600707;
+  background-color: #008477;
+  background: -webkit-gradient(linear, left top, left bottom, from(#008477), to(#004846));
+  background: linear-gradient(#008477, #004846);
+}
+
+.pokeID {
+  margin: 9px auto auto 20px;
+  padding-top: auto;
+  width: 72px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  font-size: 2em;
+  text-align: center;
+  -webkit-box-shadow: 0 0 7px #004846 inset;
+  box-shadow: 0 0 7px #004846 inset;
+  border: solid #222222 1px;
+  font-family: 'digital_dream';
+  color: #222222;
+  background-color: #FFFFFF;
+}
+
+.d-pad {
+  position: absolute;
+  z-index: 130;
+  height: 90px;
+  width: 90px;
+  margin: 390px auto auto 240px;
+}
+
+.mid-pad {
+  position: absolute;
+  z-index: 130;
+  background-color: #222222;
+  margin: 30px auto auto 30px;
+  width: 30px;
+  height: 30px;
+  -webkit-box-shadow: -3px 2px #111111;
+          box-shadow: -3px 2px #111111;
+}
+
+.up-pad {
+  position: absolute;
+  background-color: #222222;
+  margin: 0px auto auto 30px;
+  width: 30px;
+  height: 30px;
+  -webkit-box-shadow: -3px 2px #111111;
+          box-shadow: -3px 2px #111111;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  cursor: pointer;
+}
+
+.right-pad {
+  position: absolute;
+  background-color: #222222;
+  margin: 30px auto auto 60px;
+  width: 30px;
+  height: 30px;
+  -webkit-box-shadow: -3px 2px #111111;
+          box-shadow: -3px 2px #111111;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.down-pad {
+  position: absolute;
+  z-index: 130;
+  background-color: #222222;
+  margin: 60px auto auto 30px;
+  width: 30px;
+  height: 30px;
+  -webkit-box-shadow: -3px 2px #111111;
+          box-shadow: -3px 2px #111111;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.left-pad {
+  position: absolute;
+  z-index: 130;
+  background-color: #222222;
+  margin: 30px auto auto 0px;
+  width: 30px;
+  height: 30px;
+  -webkit-box-shadow: -3px 2px #111111;
+          box-shadow: -3px 2px #111111;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  cursor: pointer;
+}
+
+.midCircle {
+  position: absolute;
+  margin: 5px auto auto 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 30px;
+  background: radial-gradient(#111111, #222222);
+}
+
+.upArrow {
+  position: absolute;
+  margin: 8px auto auto 4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #111111 transparent;
+}
+
+.rightArrow {
+  position: absolute;
+  margin: 6px auto auto 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #111111;
+}
+
+.downArrow {
+  position: absolute;
+  margin: 14px auto auto 4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #111111 transparent transparent transparent;
+}
+
+.leftArrow {
+  position: absolute;
+  margin: 6px auto auto 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #111111 transparent transparent;
+}
+
+.rightScreen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 130;
+  margin: 60px auto auto 30px;
+  border-radius: 10px;
+  height: 220px;
+  width: 300px;
+  -webkit-box-shadow: 0 0 20px #137604 inset, 0px 0px 5px 1px #600707;
+          box-shadow: 0 0 20px #137604 inset, 0px 0px 5px 1px #600707;
+  background-color: #30DA0C;
+  font-family: 'digital_dream';
+  color: #0f5d03;
+  font-size: 1.2em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ACFB76), to(#30DA0C));
+  background: linear-gradient(#ACFB76, #30DA0C);
+}
+
+.rightLeafGreenButton {
+  background: -webkit-gradient(linear, left top, left bottom, from(#008477), to(#004846));
+  background: linear-gradient(#008477, #004846);
+  position: absolute;
+  z-index: 130;
+  margin: 300px auto auto 51px;
+  border-radius: 100px;
+  height: 12px;
+  width: 12px;
+  -webkit-box-shadow: -1px 1px 0px 1px #002423;
+          box-shadow: -1px 1px 0px 1px #002423;
+  cursor: pointer;
+}
+
+.rightLeafGreenButton:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#008477));
+  background: linear-gradient(black, #008477);
+  -webkit-box-shadow: 0px 0px 5px 2px #004846 inset;
+          box-shadow: 0px 0px 5px 2px #004846 inset;
+  border: #003832 solid 1px;
+}
+
+.rightYellowButton {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFF00), to(#FFAB00));
+  background: linear-gradient(#FFFF00, #FFAB00);
+  position: absolute;
+  z-index: 130;
+  margin: 300px auto auto 80px;
+  border-radius: 100px;
+  height: 12px;
+  width: 12px;
+  -webkit-box-shadow: -1px 1px 0px 1px #4d3300;
+          box-shadow: -1px 1px 0px 1px #4d3300;
+  cursor: pointer;
+}
+
+.rightYellowButton:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#996700), to(#FFFF00));
+  background: linear-gradient(#996700, #FFFF00);
+  -webkit-box-shadow: 0px 0px 5px 2px #FF9B5B inset;
+          box-shadow: 0px 0px 5px 2px #FF9B5B inset;
+  border: #8e3700 solid 1px;
+}
+
+.rightGreenButton {
+  background: -webkit-gradient(linear, left top, left bottom, from(#30DA0C), to(#137604));
+  background: linear-gradient(#30DA0C, #137604);
+  position: absolute;
+  z-index: 130;
+  margin: 300px auto auto 185px;
+  border-radius: 100px;
+  height: 12px;
+  width: 50px;
+  -webkit-box-shadow: -1px 1px 0px 1px #072c01;
+          box-shadow: -1px 1px 0px 1px #072c01;
+  cursor: pointer;
+}
+
+.rightGreenButton:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#051901), to(#30DA0C));
+  background: linear-gradient(#051901, #30DA0C);
+  -webkit-box-shadow: 0px 0px 10px 3px #1b7907 inset;
+          box-shadow: 0px 0px 10px 3px #1b7907 inset;
+  border: #104904 solid 1px;
+}
+
+.rightOrangeButton {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF9B5B), to(#F66C1F));
+  background: linear-gradient(#FF9B5B, #F66C1F);
+  position: absolute;
+  z-index: 130;
+  margin: 300px auto auto 250px;
+  border-radius: 100px;
+  height: 12px;
+  width: 50px;
+  -webkit-box-shadow: -1px 1px 0px 1px #5f2404;
+          box-shadow: -1px 1px 0px 1px #5f2404;
+  cursor: pointer;
+}
+
+.rightOrangeButton:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f45f00), to(#FF9B5B));
+  background: linear-gradient(#f45f00, #FF9B5B);
+  -webkit-box-shadow: 0px 0px 5px 3px #c14b00 inset;
+          box-shadow: 0px 0px 5px 3px #c14b00 inset;
+  border: #8e3700 solid 1px;
+}
+
+.pageLeftButton {
+  background: -webkit-gradient(linear, left top, left bottom, from(#B0B0B0), to(#494949));
+  background: linear-gradient(#B0B0B0, #494949);
+  position: absolute;
+  z-index: 100;
+  margin: 330px auto auto 51px;
+  height: 30px;
+  width: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-box-shadow: -1px 1px 0px 2px #303030;
+          box-shadow: -1px 1px 0px 2px #303030;
+  cursor: pointer;
+}
+
+.pageLeftButton:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#313131), to(#B0B0B0));
+  background: linear-gradient(#313131, #B0B0B0);
+  -webkit-box-shadow: 0px 0px 10px 3px #4a4a4a inset;
+          box-shadow: 0px 0px 10px 3px #4a4a4a inset;
+  border: #313131 solid 1px;
+}
+
+.pageRightButton {
+  background: -webkit-gradient(linear, left top, left bottom, from(#B0B0B0), to(#494949));
+  background: linear-gradient(#B0B0B0, #494949);
+  position: absolute;
+  z-index: 100;
+  margin: 330px auto auto 92px;
+  height: 30px;
+  width: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: -1px 1px 0px 2px #303030;
+          box-shadow: -1px 1px 0px 2px #303030;
+  cursor: pointer;
+}
+
+.pageRightButton:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#313131), to(#B0B0B0));
+  background: linear-gradient(#313131, #B0B0B0);
+  -webkit-box-shadow: 0px 0px 10px 3px #4a4a4a inset;
+          box-shadow: 0px 0px 10px 3px #4a4a4a inset;
+  border: #313131 solid 1px;
+}
+
+.pageRightArrow {
+  position: absolute;
+  z-index: 130;
+  margin: 5px auto auto 16px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #780808;
+}
+
+.pageLeftArrow {
+  position: absolute;
+  z-index: 130;
+  margin: 5px auto auto 12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #780808 transparent transparent;
+}
+
+.resetButton {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FBFB8A), to(#FFAB00));
+  background: linear-gradient(#FBFB8A, #FFAB00);
+  position: absolute;
+  z-index: 130;
+  margin: 330px auto auto 270px;
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
+  -webkit-box-shadow: -1px 1px 0px 1px #422c00;
+          box-shadow: -1px 1px 0px 1px #422c00;
+  cursor: pointer;
+}
+
+.resetButton:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f45f00), to(#FFFF00));
+  background: linear-gradient(#f45f00, #FFFF00);
+  -webkit-box-shadow: 0px 0px 5px 2px #996700 inset;
+          box-shadow: 0px 0px 5px 2px #996700 inset;
+  border: #752d00 solid 1px;
+}
+
+.resetArrow {
+  position: absolute;
+  z-index: 130;
+  margin: 7px auto auto 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 15px 8px 0;
+  border-color: transparent #780808 transparent transparent;
+}
+
+.pokeTypeOneContainer {
+  position: absolute;
+  z-index: 130;
+  margin: 375px auto auto 70px;
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+  -webkit-box-shadow: 0 0 20px #C00D0D inset, 0px 0px 5px 1px #600707;
+          box-shadow: 0 0 20px #C00D0D inset, 0px 0px 5px 1px #600707;
+  background-color: #FF9300;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFF00), to(#FF9300));
+  background: linear-gradient(#FFFF00, #FF9300);
+}
+
+.pokeTypeTwoContainer {
+  position: absolute;
+  z-index: 130;
+  margin: 375px auto auto 185px;
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+  -webkit-box-shadow: 0 0 20px #C00D0D inset, 0px 0px 5px 1px #600707;
+          box-shadow: 0 0 20px #C00D0D inset, 0px 0px 5px 1px #600707;
+  background-color: #FF9300;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFF00), to(#FF9300));
+  background: linear-gradient(#FFFF00, #FF9300);
+}
+
+@media (max-width: 756px) {
+  .rightSide, .innerTopRightCurve, .outterTopRightCurve, .leftScreenContainer, .leftScreen, .d-pad, .leftBlueButton, .leftGreenButton, .leftOrangeButton, .pokeIdContainer {
+    display: none;
+  }
+  .topLeftButtonContainer {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+/*# sourceMappingURL=pokeAPI.css.map */

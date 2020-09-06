@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MY CSS -->
+    <link rel='stylesheet' href='./styles/pokeAPI.css'>
+
+    <title>Poke API</title>
+</head>
+
+<body>
+    <div class='pokedex'>
+        <!-- LEFT SIDE -->
+        <div class='leftSide'>
+            <div class='topLeft'></div>
+            <div class='topLeftButtonContainer'>
+                <div class='glassButton'>
+                    <div class='glassButtonReflection'></div>
+                </div>
+                <div class='topLeftButtons'>
+                    <div class='topLeftRedButton'></div>
+                    <div class='topLeftYellowButton'></div>
+                    <div class='topLeftGreenButton'></div>
+                </div>
+            </div>
+            <!-- ?????? -->
+            <div id="top-left2"></div>
+            <!-- The front when closed -->
+            <!-- <div id="logo">
+                <img src="img/pokedex/logo-pokemon.png" alt="logo pokedex" />
+            </div> -->
+            <div class='leftScreenContainer'>
+                <div class='leftScreenTopButtonOne'></div>
+                <div class='leftScreenTopButtonTwo'></div>
+                <div class='leftScreenBottomButton'>
+                    <!-- onclick="changePokemonPicture()" -->
+                </div>
+                <p class='selectDisable'>&equiv;&equiv;</p>
+            </div>
+            <!-- Left Screen -->
+            <div class='leftScreen'>
+                <!-- Pokemon Name
+                pokeFrontImg  pokeBackImg -->
+            </div>
+            <div class='triangleCoverUp'></div> <!-- Used to cover the corner of leftScreenContainer -->
+            <div class='leftBlueButton'></div>
+            <div class='leftGreenButton'></div>
+            <div class='leftOrangeButton'></div>
+            <div class='pokeIdContainer'>
+                <div class='pokeID'>
+                    <!-- Pokemon ID -->
+                </div>
+            </div>
+            <!-- D-Pad -->
+            <div class='d-pad'>
+                <div class='mid-pad'>
+                    <div class='midCircle'></div>
+                </div>
+                <div class='up-pad'>
+                    <!-- onclick='moveUpOnPokeList' -->
+                    <div class='upArrow'></div>
+                </div>
+                <div class='right-pad'>
+                    <!-- onclick='moveRightOnPokeList' -->
+                    <div class='rightArrow'></div>
+                </div>
+                <div class='down-pad'>
+                    <!-- onclick='moveDownOnPokeList' -->
+                    <div class='downArrow'></div>
+                </div>
+                <div class='left-pad'>
+                    <!-- onclick='moveLeftOnPokeList' -->
+                    <div class='leftArrow'></div>
+                </div>
+            </div>
+        </div>
+        <!-- MIDDLE -->
+        <div class='middle'>
+            <!-- hinge1 => middleTopHinge -->
+            <div class='middleTopHinge'></div>
+            <!-- hinge2 => middleMidHinge -->
+            <div class='middleMidHinge'></div>
+            <!-- hinge3 => middleBottomHinge -->
+            <div class='middleBottomHinge'></div>
+        </div>
+        <!-- RIGHT SIDE-->
+        <div class='rightSide'>
+            <!-- Right Screen -->
+            <div class='rightScreen'>
+                <!-- Pokemon List -->
+                <ul class='pokemonList'>
+
+                </ul>
+            </div>
+            <!-- leaf-button-right => rightLeafGreenButton -->
+            <div class='rightLeafGreenButton'></div>
+            <!-- yellow-button-right => rightYellowButton -->
+            <div class='rightYellowButton'></div>
+            <!-- green-button-right => rightGreenButton -->
+            <div class='rightGreenButton'></div>
+            <!-- orange-button-right => rightOrangeButton -->
+            <div class='rightOrangeButton'></div>
+            <!-- Page Left Button -->
+            <div class='pageLeftButton'>
+                <div class='pageLeftArrow'></div>
+            </div>
+            <!-- Page Right Button -->
+            <div class='pageRightButton'>
+                <div class='pageRightArrow'></div>
+            </div>
+            <!-- Return to First Page Button -->
+            <div class='resetButton'>
+                <div class='resetArrow'></div>
+            </div>
+            <!-- pokeType One -->
+            <div class='pokeTypeOneContainer'></div>
+            <!-- pokeType Two -->
+            <div class='pokeTypeTwoContainer'></div>
+        </div>
+        <!-- top-right1 => innerTopRightCurve -->
+        <div class='innerTopRightCurve'></div>
+        <!-- top-right2 => outterTopRightCurve -->
+        <div class='outterTopRightCurve'></div>
+    </div>
+
+    <!-- MY SCRIPT -->
+    <script src='./scripts/pokeAPI.js'></script>
+</body>
+
+</html>
