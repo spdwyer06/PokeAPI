@@ -154,6 +154,7 @@ function resetList() {
     rightSide.removeChild(pageLeftButton);
     clearLeftScreen();
 
+    pokemonID.innerText = '';
     pageNumber = 0;
     offset = 0;
 
@@ -165,6 +166,7 @@ function clearLeftScreen() {
     while (leftScreen.firstChild) {
         leftScreen.removeChild(leftScreen.firstChild);
     }
+
 }
 
 function clearRightScreen() {
