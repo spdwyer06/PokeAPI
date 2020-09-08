@@ -157,7 +157,7 @@ li a {
           box-shadow: -10px 8px 1px 3px #600707;
 }
 
-#top-left2 {
+.innerTopLeftCurve {
   position: absolute;
   z-index: 100;
   margin: 50px auto auto 150px;
